@@ -1,5 +1,5 @@
 from run_evals import evaluate_generated_answer
- 
+
 def run_RAG(user_question):
   return "IDKLOL"
  
@@ -23,7 +23,6 @@ def test_run_RAG():
     generated_answers.append(answer)
  
   for i in range(len(eval_questions)):
-    result = evaluate_generated_answer(eval_answers[i],
-      generated_answers[i])
+    result = evaluate_generated_answer(eval_answers[i], generated_answers[i])
     assert "PASS" in result
 
